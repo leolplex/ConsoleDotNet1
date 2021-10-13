@@ -1,4 +1,5 @@
 ﻿using System;
+using WireMock.Server;
 
 namespace ConsoleDotNet1
 {
@@ -6,6 +7,7 @@ namespace ConsoleDotNet1
     {
         static void Main(string[] args)
         {
+            var server = WireMockServer.Start();
             Console.WriteLine("Hello World!");
         }
     }
